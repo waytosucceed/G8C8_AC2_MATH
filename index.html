@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header {
+        width: 100%;
+        height: 90px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px;
+        display: flex;
+      }
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1100px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          height: 300px;
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./assests/logo/logo1.png" alt="logo" class="company-logo" />
+        <img src="./assests/logo/logo2.png" alt="logo" class="company-logo" />
+      </div>
+
+      <div class="content-container">
+        <div class="lesson-title">LCM - Least Common Multiple</div>
+
+        <div class="lesson-content">
+          <div>
+           
+            
+         
+            <h2>What is Least Common Multiple (LCM)?
+            </h2>
+            
+            <p>
+              The least common multiple is also known as LCM (or) the lowest common multiple in math. The <b>least common multiple</b> of two or more numbers is the smallest number among all common multiples of the given numbers. Let us take two numbers, 2 and 5. Each will have its own set of multiples.
+              <ul>
+                <li>Multiples of 2 are 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, and so on.</li>
+                <li>Multiples of 5 are 5, 10, 15, 20, and so on.</li>
+              </ul>
+              <p>
+                Thus, the common multiples of 2 and 5 are 10, 20, and so on. The smallest number among 10, 20, and so on is 10. So the least common multiple of 2 and 5 is 10. It can be written as LCM (2, 5) = 10.
+              </p>
+            </p>
+            
+            
+            <h2>How to Find LCM?</h2>
+            <p>
+              LCM of numbers can be calculated using various methods. Let us see how to find the lowest common multiple (LCM) using the 3 methods given below. Each method is explained below with some examples.
+            <ul>
+              <li>LCM by Listing Method</li>
+              <li>LCM by Prime Factorization Method</li>
+              <li>LCM using the Division Method</li>
+            </ul>
+            </p>
+            
+            <h2>LCM by Listing Method</h2>
+
+            <p>
+              We can find out the common multiples of two or more numbers by listing their multiples. Out of these common multiples, the least common multiple is considered and the LCM of two given numbers can thus be calculated. To calculate the LCM of the two numbers A and B by the listing method, we use the steps given below:
+              <UL>
+                <LI><B>Step 1</B>: List the first few multiples of A and B.</LI>
+                <LI><B>Step 2</B>: Mark the common multiples from the multiples of both numbers.</LI>
+                <LI><B>Step 3</B>: Select the smallest common multiple. That lowest common multiple is the LCM of the two numbers.</LI>
+              </UL>
+              <P>
+                <B>Example</B>: Find the least common multiple (LCM) of 4 and 5.
+<BR><B>Solution</B>: The first few multiples of 4 are: 4, 8, 12, 16, <B>20</B>, 24, 28, 32, 36, <B>40</B>, ...
+  <BR>And the first few multiples of 5 are 5, 10, 15, <B>20</B>, 25, 30, 35, <B>40</B>, ...
+    <BR><BR>We can observe that 20 is the least multiple which is common in the multiples of 4 and 5. Therefore, the least common multiple is 20.
+
+              </P>
+            </p>
+            
+            <h2>LCM by Prime Factorization Method</h2>
+            
+            <p>
+              By using the prime factorization method we can find out the LCM of the given numbers. To calculate the LCM of two numbers using the prime factorization method, we use the steps given below:
+              <UL>
+                <LI><B>Step 1</B>:  Find the prime factors of the given numbers by repeated division method.</LI>
+                <LI><B>Step 2</B>: Write the numbers in their exponent form. Find the product of only those prime factors that have the highest power.</LI>
+                <LI><B>Step 3</B>: The product of these factors with the highest powers is the LCM of the given numbers.</LI>
+              </UL>
+              <p><B>Example</B>: Find the least common multiple (LCM) of 60 and 90 using prime factorization.<BR>
+  <B>Solution</B>:
+  Let us find the LCM of 60 and 90 using the prime factorization method.</p>
+                <UL>
+                  <LI><b>Step 1</b>: The prime factorization of 60 and 90 are: 60 = 2 × 2 × 3 × 5 and 90 = 2 × 3 × 3 × 5</LI>
+                  <LI><b>Step 2</b>: If we write these prime factors in their exponent form it will be expressed as, 60 = 2<sup>2</sup> × 3<sup>1</sup> × 5<sup>1</sup> and 90 = 2<sup>1</sup> × 3<sup>2</sup> × 5<sup>1</sup></LI>
+                  <LI><b>Step 3</b>: Now, we will find the product of only those factors that have the highest powers among these. This will be, 2<sup>2</sup> × 3<sup>2</sup> × 5<sup>1</sup> = 4 × 9 × 5 = 180</LI>
+                </UL>
+                <p>
+                  Therefore, LCM of 60 and 90 = 180.
+                </p>
+</p>
+            <h2>LCM by Division Method</h2>
+            <p>
+              To find the LCM by division method, we divide the numbers by a common prime number, and these prime factors are used to calculate the LCM of those numbers. Let us understand this method using the steps given below:
+              <ul>
+                <li><b>Step 1</b>: Find a prime number which is a factor of at least one of the given numbers. Write this prime number on the left of the given numbers.</li>
+                <li><b>Step 2</b>: If the prime number in step 1 is a factor of the number, then divide the number by the prime and write the quotient below it. If the prime number in step 1 is not a factor of the number, then write the number in the row below as it is. Continue the steps until 1 is left in the last row.</li>
+                
+      
+              </ul>
+              <p><b>Example</b>:Find the least common multiple (LCM) of 6 and 15 using the division method.
+                <BR><B>Solution</B>: Let us find the least common multiple (LCM) of 6 and 15 using the division method using the steps given below.
+                 <UL>
+                   <LI><b>Step 1</b>: 2 is the smallest prime number and it is a factor of 6. Write 2 on the left of the two numbers. For each number in the right column, continue finding out prime numbers which are their factors.</LI>
+                   <LI><b>Step 2</b>: 2 divides 6 but it is not a factor of 15, so we write the number 15 in the row below as it is. Continue the steps until 1 is left in the last row. Then, we divide 3 and 15 by 3. This gives us 1 and 3. Now, again we write 5 on the left side and we finally get 1, 1 as the quotient in the last row.</LI>
+                   <LI><b>Step 3</b>: Then we multiply these numbers on the left. The LCM is the product of all these prime numbers. LCM of 6 and 15 is, 2 × 3 × 5 = 30.</LI>
+                 </UL></p>
+                 <img src="./assests/images/1.png" alt="">
+                 <p>
+                  Though we have three methods to find the least common multiple, the division method is the most common and easy method that we use.
+                 </p>
+            </p>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
